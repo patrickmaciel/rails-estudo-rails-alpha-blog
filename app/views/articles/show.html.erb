@@ -1,0 +1,9 @@
+<h1>Show Article</h1>
+
+<ul>
+  <li><strong>Title: </strong><%= @article.title %></li>
+  <li><strong>Description: </strong><%= @article.description %></li>
+</ul>
+
+<%= link_to 'Articles', articles_path %>
+<%= link_to 'Edit this Article', edit_article_path(@article.id) %>
